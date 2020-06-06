@@ -36,7 +36,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btn_Add_Provider = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.btn_SearchPhone = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -53,10 +55,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_Add_Provider = new System.Windows.Forms.Button();
-            this.btn_SearchPhone = new System.Windows.Forms.Button();
             this.btn_Add_Import = new System.Windows.Forms.Button();
             this.btn_SearchID = new System.Windows.Forms.Button();
+            this.txt_Total = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel_CustomerInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -168,6 +171,26 @@
             this.textBox6.Text = "Công ty ABC";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btn_Add_Provider
+            // 
+            this.btn_Add_Provider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
+            this.btn_Add_Provider.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Add_Provider.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Add_Provider.FlatAppearance.BorderSize = 0;
+            this.btn_Add_Provider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Add_Provider.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add_Provider.ForeColor = System.Drawing.Color.White;
+            this.btn_Add_Provider.Image = global::QuanLyCuaHangGear.Properties.Resources.add;
+            this.btn_Add_Provider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Add_Provider.Location = new System.Drawing.Point(151, 215);
+            this.btn_Add_Provider.Name = "btn_Add_Provider";
+            this.btn_Add_Provider.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btn_Add_Provider.Size = new System.Drawing.Size(263, 53);
+            this.btn_Add_Provider.TabIndex = 27;
+            this.btn_Add_Provider.Text = "   THÊM NHÀ CUNG CẤP";
+            this.btn_Add_Provider.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Add_Provider.UseVisualStyleBackColor = false;
+            // 
             // textBox7
             // 
             this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
@@ -182,6 +205,22 @@
             this.textBox7.Text = "hovanan@gmail.com";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btn_SearchPhone
+            // 
+            this.btn_SearchPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
+            this.btn_SearchPhone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_SearchPhone.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_SearchPhone.FlatAppearance.BorderSize = 0;
+            this.btn_SearchPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SearchPhone.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SearchPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_SearchPhone.Image = global::QuanLyCuaHangGear.Properties.Resources.Search;
+            this.btn_SearchPhone.Location = new System.Drawing.Point(470, 8);
+            this.btn_SearchPhone.Name = "btn_SearchPhone";
+            this.btn_SearchPhone.Size = new System.Drawing.Size(58, 47);
+            this.btn_SearchPhone.TabIndex = 23;
+            this.btn_SearchPhone.UseVisualStyleBackColor = false;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -189,7 +228,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(542, 217);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 155);
             this.dataGridView1.TabIndex = 88;
             // 
             // dateTimePicker1
@@ -375,42 +414,6 @@
             this.label3.TabIndex = 83;
             this.label3.Text = "Mã phiếu nhập:";
             // 
-            // btn_Add_Provider
-            // 
-            this.btn_Add_Provider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.btn_Add_Provider.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Add_Provider.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Add_Provider.FlatAppearance.BorderSize = 0;
-            this.btn_Add_Provider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Add_Provider.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add_Provider.ForeColor = System.Drawing.Color.White;
-            this.btn_Add_Provider.Image = global::QuanLyCuaHangGear.Properties.Resources.add;
-            this.btn_Add_Provider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Add_Provider.Location = new System.Drawing.Point(151, 215);
-            this.btn_Add_Provider.Name = "btn_Add_Provider";
-            this.btn_Add_Provider.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btn_Add_Provider.Size = new System.Drawing.Size(263, 53);
-            this.btn_Add_Provider.TabIndex = 27;
-            this.btn_Add_Provider.Text = "   THÊM NHÀ CUNG CẤP";
-            this.btn_Add_Provider.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Add_Provider.UseVisualStyleBackColor = false;
-            // 
-            // btn_SearchPhone
-            // 
-            this.btn_SearchPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.btn_SearchPhone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_SearchPhone.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_SearchPhone.FlatAppearance.BorderSize = 0;
-            this.btn_SearchPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SearchPhone.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SearchPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_SearchPhone.Image = global::QuanLyCuaHangGear.Properties.Resources.Search;
-            this.btn_SearchPhone.Location = new System.Drawing.Point(470, 8);
-            this.btn_SearchPhone.Name = "btn_SearchPhone";
-            this.btn_SearchPhone.Size = new System.Drawing.Size(58, 47);
-            this.btn_SearchPhone.TabIndex = 23;
-            this.btn_SearchPhone.UseVisualStyleBackColor = false;
-            // 
             // btn_Add_Import
             // 
             this.btn_Add_Import.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
@@ -447,10 +450,47 @@
             this.btn_SearchID.TabIndex = 72;
             this.btn_SearchID.UseVisualStyleBackColor = false;
             // 
+            // txt_Total
+            // 
+            this.txt_Total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
+            this.txt_Total.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Total.ForeColor = System.Drawing.Color.White;
+            this.txt_Total.Location = new System.Drawing.Point(873, 536);
+            this.txt_Total.Name = "txt_Total";
+            this.txt_Total.Size = new System.Drawing.Size(180, 33);
+            this.txt_Total.TabIndex = 90;
+            this.txt_Total.Text = "5000000";
+            this.txt_Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(214)))), ((int)(((byte)(247)))));
+            this.label13.Location = new System.Drawing.Point(1059, 541);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 24);
+            this.label13.TabIndex = 91;
+            this.label13.Text = "VND";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(214)))), ((int)(((byte)(247)))));
+            this.label12.Location = new System.Drawing.Point(746, 541);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(107, 24);
+            this.label12.TabIndex = 92;
+            this.label12.Text = "Tổng tiền:";
+            // 
             // Import_Control
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
+            this.Controls.Add(this.txt_Total);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel_CustomerInfo);
@@ -513,5 +553,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_Total;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
     }
 }
