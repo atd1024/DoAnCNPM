@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyCuaHangGear
+namespace QuanLyCuaHangGear.View
 {
-    public partial class Welcome_Control : UserControl
+    public partial class Account_Control_AD : UserControl
     {
-        public Welcome_Control()
+        public Account_Control_AD()
         {
             InitializeComponent();
         }
-
-       
     }
 }
