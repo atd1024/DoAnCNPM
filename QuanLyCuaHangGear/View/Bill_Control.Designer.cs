@@ -58,6 +58,9 @@
             this.btn_Add_Customer = new System.Windows.Forms.Button();
             this.btn_Add_Bill = new System.Windows.Forms.Button();
             this.btn_SearchID = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_Total = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel_CustomerInfo.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +112,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(501, 217);
+            this.dataGridView1.Size = new System.Drawing.Size(501, 155);
             this.dataGridView1.TabIndex = 43;
             // 
             // dateTimePicker1
@@ -457,6 +460,40 @@
             this.btn_SearchID.TabIndex = 23;
             this.btn_SearchID.UseVisualStyleBackColor = false;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(214)))), ((int)(((byte)(247)))));
+            this.label12.Location = new System.Drawing.Point(743, 541);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(107, 24);
+            this.label12.TabIndex = 30;
+            this.label12.Text = "Tổng tiền:";
+            // 
+            // txt_Total
+            // 
+            this.txt_Total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
+            this.txt_Total.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Total.ForeColor = System.Drawing.Color.White;
+            this.txt_Total.Location = new System.Drawing.Point(870, 536);
+            this.txt_Total.Name = "txt_Total";
+            this.txt_Total.Size = new System.Drawing.Size(180, 33);
+            this.txt_Total.TabIndex = 24;
+            this.txt_Total.Text = "5000000";
+            this.txt_Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(214)))), ((int)(((byte)(247)))));
+            this.label13.Location = new System.Drawing.Point(1056, 541);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 24);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "VND";
+            // 
             // Bill_Control
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -469,6 +506,7 @@
             this.Controls.Add(this.btn_SearchID);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txt_Total);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox9);
@@ -477,6 +515,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
@@ -525,5 +565,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel_CustomerInfo;
         private System.Windows.Forms.Button btn_SearchID;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_Total;
+        private System.Windows.Forms.Label label13;
     }
 }
