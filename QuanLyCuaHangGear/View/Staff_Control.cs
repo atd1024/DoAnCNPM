@@ -30,7 +30,7 @@ namespace QuanLyCuaHangGear
 
         private void btn_View_Click_1(object sender, EventArgs e)
         {
-
+            // comment
         }
     }
 }
