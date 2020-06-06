@@ -146,7 +146,7 @@ namespace QuanLyCuaHangGear
         }
         private void Form_Admin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // an ngu 
+            // an ngu ngu ngu
         }
 
         private void Form_Admin_FormClosed(object sender, FormClosedEventArgs e)
