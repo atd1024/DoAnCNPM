@@ -42,21 +42,29 @@ namespace QuanLyCuaHangGear
             }
             return true;
         }
-
+        public void Reset_TextBoxes()
+        {
+            txt_Username.Text = "Username";
+            txt_Password.Text = "Password";
+            txt_Password.PasswordChar = '\0';   // '/0' is a 'null character'. 1 cách hợp lệ để diễn đạt 1 kí tự 'trống'
+            // txt_Password.PasswordChar = new char();
+            label_Warning.Visible = false;
+        }
 
         // event 
         private void txt_Username_Click(object sender, EventArgs e)
         {
             txt_Username.Clear();
             pic_Username.Image = Properties.Resources.user;
+            
         }
 
         private void txt_Password_Click(object sender, EventArgs e)
         {
             txt_Password.Clear();
             pic_Password.Image = Properties.Resources.pass;
+            
             txt_Password.PasswordChar = '*';
-
         }
 
         private void label_Exit_Click(object sender, EventArgs e)
@@ -98,13 +106,19 @@ namespace QuanLyCuaHangGear
             {
                 Form_Admin f_admin = new Form_Admin();
                 this.Hide();
-                f_admin.Show();
+                f_admin.ShowDialog();
+
+                this.Show();
+                Reset_TextBoxes();                                    
             }
             if (txt_Username.Text == "2" && txt_Password.Text == "2")
             {
                 Form_Staff f_staff = new Form_Staff();
                 this.Hide();
-                f_staff.Show();
+                f_staff.ShowDialog();
+
+                this.Show();
+                Reset_TextBoxes();
             }
         }
     }

@@ -92,9 +92,7 @@ namespace QuanLyCuaHangGear.View
 
         private void Form_Staff_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form_Login f_Log = new Form_Login();
-            f_Log.Show();
-            this.Dispose();
+            this.DialogResult = DialogResult.OK;          
         }
     }
 }

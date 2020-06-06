@@ -13,7 +13,7 @@ namespace QuanLyCuaHangGear
     public partial class Form_Admin : Form
     {
         // fields
-
+        
         // constuctor
         public Form_Admin()
         {
@@ -146,14 +146,15 @@ namespace QuanLyCuaHangGear
         }
         private void Form_Admin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // an ngu ngu ngu
+            
         }
 
         private void Form_Admin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form_Login f_Log = new Form_Login();
-            f_Log.Show();
-            this.Dispose();
+            //Form_Login f_Log = new Form_Login();
+            //f_Log.Show();
+            this.DialogResult = DialogResult.OK;
+            //this.Dispose();
         }
     }
 }
