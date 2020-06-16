@@ -30,11 +30,9 @@
         {
             this.label24 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox_tenHienThi = new System.Windows.Forms.TextBox();
             this.textBox_tenTaiKhoan = new System.Windows.Forms.TextBox();
             this.textBox_QueQuan = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox_CMND = new System.Windows.Forms.TextBox();
             this.textBox_DiaChi = new System.Windows.Forms.TextBox();
             this.textBox_soDienThoai = new System.Windows.Forms.TextBox();
@@ -62,7 +60,6 @@
             this.btn_Search = new System.Windows.Forms.Button();
             this.btn_View = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
-            this.btn_resetPass = new System.Windows.Forms.Button();
             this.btn_Sort = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Staff_dataGridView)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +70,7 @@
             this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
             this.label24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(214)))), ((int)(((byte)(247)))));
-            this.label24.Location = new System.Drawing.Point(112, 138);
+            this.label24.Location = new System.Drawing.Point(123, 138);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(208, 24);
             this.label24.TabIndex = 77;
@@ -89,19 +86,6 @@
             this.label6.Size = new System.Drawing.Size(438, 33);
             this.label6.TabIndex = 76;
             this.label6.Text = "Thông tin chi tiết của nhân viên";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(1033, 299);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(183, 23);
-            this.textBox2.TabIndex = 54;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_tenHienThi
             // 
@@ -143,18 +127,6 @@
             this.textBox_QueQuan.Size = new System.Drawing.Size(216, 23);
             this.textBox_QueQuan.TabIndex = 57;
             this.textBox_QueQuan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(214)))), ((int)(((byte)(247)))));
-            this.label1.Location = new System.Drawing.Point(864, 299);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 24);
-            this.label1.TabIndex = 74;
-            this.label1.Text = "Mật khẩu mới:";
             // 
             // textBox_CMND
             // 
@@ -427,7 +399,7 @@
             // btn_Add
             // 
             this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.btn_Add.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_Add.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
             this.btn_Add.FlatAppearance.BorderSize = 0;
             this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Add.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -521,25 +493,6 @@
             this.btn_Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Delete.UseVisualStyleBackColor = false;
             // 
-            // btn_resetPass
-            // 
-            this.btn_resetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.btn_resetPass.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_resetPass.FlatAppearance.BorderSize = 0;
-            this.btn_resetPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_resetPass.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_resetPass.ForeColor = System.Drawing.Color.White;
-            this.btn_resetPass.Image = global::QuanLyCuaHangGear.Properties.Resources.reset;
-            this.btn_resetPass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_resetPass.Location = new System.Drawing.Point(909, 350);
-            this.btn_resetPass.Name = "btn_resetPass";
-            this.btn_resetPass.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btn_resetPass.Size = new System.Drawing.Size(239, 66);
-            this.btn_resetPass.TabIndex = 51;
-            this.btn_resetPass.Text = "     ĐẶT LẠI MẬT KHẨU";
-            this.btn_resetPass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_resetPass.UseVisualStyleBackColor = false;
-            // 
             // btn_Sort
             // 
             this.btn_Sort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
@@ -558,6 +511,7 @@
             this.btn_Sort.Text = "  SẮP XẾP";
             this.btn_Sort.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Sort.UseVisualStyleBackColor = false;
+            this.btn_Sort.Click += new System.EventHandler(this.btn_Sort_Click);
             // 
             // Staff_Control
             // 
@@ -572,11 +526,9 @@
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox_tenHienThi);
             this.Controls.Add(this.textBox_tenTaiKhoan);
             this.Controls.Add(this.textBox_QueQuan);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_CMND);
             this.Controls.Add(this.textBox_DiaChi);
             this.Controls.Add(this.textBox_soDienThoai);
@@ -596,7 +548,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox_idNhanVien);
-            this.Controls.Add(this.btn_resetPass);
             this.Controls.Add(this.btn_Sort);
             this.Controls.Add(this.Staff_dataGridView);
             this.Name = "Staff_Control";
@@ -611,11 +562,9 @@
 
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox_tenHienThi;
         private System.Windows.Forms.TextBox textBox_tenTaiKhoan;
         private System.Windows.Forms.TextBox textBox_QueQuan;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox_CMND;
         private System.Windows.Forms.TextBox textBox_DiaChi;
         private System.Windows.Forms.TextBox textBox_soDienThoai;
@@ -634,7 +583,6 @@
         private System.Windows.Forms.TextBox textBox_tenNhanVien;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox_idNhanVien;
-        private System.Windows.Forms.Button btn_resetPass;
         private System.Windows.Forms.Button btn_Sort;
         private System.Windows.Forms.DataGridView Staff_dataGridView;
         private System.Windows.Forms.Panel panel2;

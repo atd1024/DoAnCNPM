@@ -42,10 +42,7 @@
             this.btn_Import = new System.Windows.Forms.Button();
             this.btn_Bill = new System.Windows.Forms.Button();
             this.btn_Account = new System.Windows.Forms.Button();
-            this.welcome_Control1 = new QuanLyCuaHangGear.Welcome_Control();
-            this.bill_Control1 = new QuanLyCuaHangGear.Bill_Control();
-            this.import_Control1 = new QuanLyCuaHangGear.View.Import_Control();
-            this.account_Control1 = new QuanLyCuaHangGear.View.Account_Control();
+            this.panel_Main = new System.Windows.Forms.Panel();
             this.panel_Logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_StoreLogo)).BeginInit();
             this.panel_Head.SuspendLayout();
@@ -84,6 +81,7 @@
             this.pic_StoreLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_StoreLogo.TabIndex = 2;
             this.pic_StoreLogo.TabStop = false;
+            this.pic_StoreLogo.Click += new System.EventHandler(this.pic_StoreLogo_Click);
             // 
             // panel_Slide
             // 
@@ -238,47 +236,18 @@
             this.btn_Account.UseVisualStyleBackColor = true;
             this.btn_Account.Click += new System.EventHandler(this.btn_Account_Click);
             // 
-            // welcome_Control1
+            // panel_Main
             // 
-            this.welcome_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.welcome_Control1.Location = new System.Drawing.Point(250, 100);
-            this.welcome_Control1.Name = "welcome_Control1";
-            this.welcome_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.welcome_Control1.TabIndex = 10;
-            // 
-            // bill_Control1
-            // 
-            this.bill_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.bill_Control1.Location = new System.Drawing.Point(250, 100);
-            this.bill_Control1.Name = "bill_Control1";
-            this.bill_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.bill_Control1.TabIndex = 11;
-            // 
-            // import_Control1
-            // 
-            this.import_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.import_Control1.Location = new System.Drawing.Point(250, 100);
-            this.import_Control1.Name = "import_Control1";
-            this.import_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.import_Control1.TabIndex = 12;
-            // 
-            // account_Control1
-            // 
-            this.account_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.account_Control1.Location = new System.Drawing.Point(250, 100);
-            this.account_Control1.Name = "account_Control1";
-            this.account_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.account_Control1.TabIndex = 13;
+            this.panel_Main.Location = new System.Drawing.Point(250, 100);
+            this.panel_Main.Name = "panel_Main";
+            this.panel_Main.Size = new System.Drawing.Size(1250, 700);
+            this.panel_Main.TabIndex = 10;
             // 
             // Form_Staff
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(1500, 800);
-            this.Controls.Add(this.account_Control1);
-            this.Controls.Add(this.import_Control1);
-            this.Controls.Add(this.bill_Control1);
-            this.Controls.Add(this.welcome_Control1);
+            this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.panel_Head);
             this.Controls.Add(this.panel_Left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -312,9 +281,6 @@
         private System.Windows.Forms.PictureBox pic_UpperLogo;
         private System.Windows.Forms.Panel panel_Left;
         private System.Windows.Forms.Button btn_Account;
-        private Welcome_Control welcome_Control1;
-        private Bill_Control bill_Control1;
-        private Import_Control import_Control1;
-        private Account_Control account_Control1;
+        private System.Windows.Forms.Panel panel_Main;
     }
 }

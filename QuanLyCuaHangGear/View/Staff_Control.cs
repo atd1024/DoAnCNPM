@@ -12,6 +12,16 @@ namespace QuanLyCuaHangGear
 {
     public partial class Staff_Control : UserControl
     {
+        private static Staff_Control _instance;
+        public static Staff_Control Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new Staff_Control();
+                return _instance;
+            }
+        }
         public Staff_Control()
         {
             InitializeComponent();
@@ -31,6 +41,11 @@ namespace QuanLyCuaHangGear
         private void btn_View_Click_1(object sender, EventArgs e)
         {
             // comment
+        }
+
+        private void btn_Sort_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

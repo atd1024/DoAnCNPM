@@ -30,14 +30,9 @@
         {
             this.panel_Logo = new System.Windows.Forms.Panel();
             this.label_StoreName = new System.Windows.Forms.Label();
+            this.pic_StoreLogo = new System.Windows.Forms.PictureBox();
             this.panel_Left = new System.Windows.Forms.Panel();
             this.panel_Slide = new System.Windows.Forms.Panel();
-            this.panel_Head = new System.Windows.Forms.Panel();
-            this.label_Name = new System.Windows.Forms.Label();
-            this.label_UserType = new System.Windows.Forms.Label();
-            this.label_UpperLogo = new System.Windows.Forms.Label();
-            this.pic_UpperLogo = new System.Windows.Forms.PictureBox();
-            this.pic_StoreLogo = new System.Windows.Forms.PictureBox();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.btn_Import = new System.Windows.Forms.Button();
             this.btn_Bill = new System.Windows.Forms.Button();
@@ -45,18 +40,17 @@
             this.btn_Report = new System.Windows.Forms.Button();
             this.btn_Product = new System.Windows.Forms.Button();
             this.btn_Staff = new System.Windows.Forms.Button();
-            this.import_Control1 = new QuanLyCuaHangGear.View.Import_Control();
-            this.bill_Control1 = new QuanLyCuaHangGear.Bill_Control();
-            this.report_Control1 = new QuanLyCuaHangGear.Report_Control();
-            this.product_Control1 = new QuanLyCuaHangGear.Product_Control();
-            this.staff_Control1 = new QuanLyCuaHangGear.Staff_Control();
-            this.welcome_Control1 = new QuanLyCuaHangGear.Welcome_Control();
-            this.account_Control1 = new QuanLyCuaHangGear.View.Account_Control();
+            this.panel_Head = new System.Windows.Forms.Panel();
+            this.label_Name = new System.Windows.Forms.Label();
+            this.label_UserType = new System.Windows.Forms.Label();
+            this.pic_UpperLogo = new System.Windows.Forms.PictureBox();
+            this.label_UpperLogo = new System.Windows.Forms.Label();
+            this.panel_Main = new System.Windows.Forms.Panel();
             this.panel_Logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_StoreLogo)).BeginInit();
             this.panel_Left.SuspendLayout();
             this.panel_Head.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_UpperLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_StoreLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Logo
@@ -80,6 +74,17 @@
             this.label_StoreName.Size = new System.Drawing.Size(175, 29);
             this.label_StoreName.TabIndex = 2;
             this.label_StoreName.Text = "QuocAn Store";
+            // 
+            // pic_StoreLogo
+            // 
+            this.pic_StoreLogo.Image = global::QuanLyCuaHangGear.Properties.Resources.Store_Logo;
+            this.pic_StoreLogo.Location = new System.Drawing.Point(3, 1);
+            this.pic_StoreLogo.Name = "pic_StoreLogo";
+            this.pic_StoreLogo.Size = new System.Drawing.Size(89, 97);
+            this.pic_StoreLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_StoreLogo.TabIndex = 2;
+            this.pic_StoreLogo.TabStop = false;
+            this.pic_StoreLogo.Click += new System.EventHandler(this.pic_StoreLogo_Click);
             // 
             // panel_Left
             // 
@@ -106,75 +111,6 @@
             this.panel_Slide.Name = "panel_Slide";
             this.panel_Slide.Size = new System.Drawing.Size(10, 80);
             this.panel_Slide.TabIndex = 2;
-            // 
-            // panel_Head
-            // 
-            this.panel_Head.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
-            this.panel_Head.Controls.Add(this.label_Name);
-            this.panel_Head.Controls.Add(this.label_UserType);
-            this.panel_Head.Controls.Add(this.pic_UpperLogo);
-            this.panel_Head.Controls.Add(this.label_UpperLogo);
-            this.panel_Head.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Head.Location = new System.Drawing.Point(250, 0);
-            this.panel_Head.Name = "panel_Head";
-            this.panel_Head.Size = new System.Drawing.Size(1250, 100);
-            this.panel_Head.TabIndex = 1;
-            // 
-            // label_Name
-            // 
-            this.label_Name.AutoSize = true;
-            this.label_Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
-            this.label_Name.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label_Name.Location = new System.Drawing.Point(1006, 39);
-            this.label_Name.Name = "label_Name";
-            this.label_Name.Size = new System.Drawing.Size(177, 24);
-            this.label_Name.TabIndex = 5;
-            this.label_Name.Text = "Ngô Lưu Quốc Đạt";
-            // 
-            // label_UserType
-            // 
-            this.label_UserType.AutoSize = true;
-            this.label_UserType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
-            this.label_UserType.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_UserType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label_UserType.Location = new System.Drawing.Point(919, 39);
-            this.label_UserType.Name = "label_UserType";
-            this.label_UserType.Size = new System.Drawing.Size(90, 24);
-            this.label_UserType.TabIndex = 5;
-            this.label_UserType.Text = "Quản lý:";
-            // 
-            // label_UpperLogo
-            // 
-            this.label_UpperLogo.AutoSize = true;
-            this.label_UpperLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
-            this.label_UpperLogo.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_UpperLogo.ForeColor = System.Drawing.Color.White;
-            this.label_UpperLogo.Location = new System.Drawing.Point(109, 48);
-            this.label_UpperLogo.Name = "label_UpperLogo";
-            this.label_UpperLogo.Size = new System.Drawing.Size(145, 27);
-            this.label_UpperLogo.TabIndex = 2;
-            this.label_UpperLogo.Text = "                   ";
-            // 
-            // pic_UpperLogo
-            // 
-            this.pic_UpperLogo.Location = new System.Drawing.Point(42, 36);
-            this.pic_UpperLogo.Name = "pic_UpperLogo";
-            this.pic_UpperLogo.Size = new System.Drawing.Size(50, 50);
-            this.pic_UpperLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_UpperLogo.TabIndex = 3;
-            this.pic_UpperLogo.TabStop = false;
-            // 
-            // pic_StoreLogo
-            // 
-            this.pic_StoreLogo.Image = global::QuanLyCuaHangGear.Properties.Resources.Store_Logo;
-            this.pic_StoreLogo.Location = new System.Drawing.Point(3, 1);
-            this.pic_StoreLogo.Name = "pic_StoreLogo";
-            this.pic_StoreLogo.Size = new System.Drawing.Size(89, 97);
-            this.pic_StoreLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_StoreLogo.TabIndex = 2;
-            this.pic_StoreLogo.TabStop = false;
-            this.pic_StoreLogo.Click += new System.EventHandler(this.pic_StoreLogo_Click);
             // 
             // btn_Exit
             // 
@@ -302,75 +238,76 @@
             this.btn_Staff.UseVisualStyleBackColor = true;
             this.btn_Staff.Click += new System.EventHandler(this.btn_Staff_Click);
             // 
-            // import_Control1
+            // panel_Head
             // 
-            this.import_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.import_Control1.Location = new System.Drawing.Point(250, 100);
-            this.import_Control1.Name = "import_Control1";
-            this.import_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.import_Control1.TabIndex = 7;
+            this.panel_Head.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
+            this.panel_Head.Controls.Add(this.label_Name);
+            this.panel_Head.Controls.Add(this.label_UserType);
+            this.panel_Head.Controls.Add(this.pic_UpperLogo);
+            this.panel_Head.Controls.Add(this.label_UpperLogo);
+            this.panel_Head.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_Head.Location = new System.Drawing.Point(250, 0);
+            this.panel_Head.Name = "panel_Head";
+            this.panel_Head.Size = new System.Drawing.Size(1250, 100);
+            this.panel_Head.TabIndex = 1;
             // 
-            // bill_Control1
+            // label_Name
             // 
-            this.bill_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.bill_Control1.Location = new System.Drawing.Point(250, 100);
-            this.bill_Control1.Name = "bill_Control1";
-            this.bill_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.bill_Control1.TabIndex = 6;
+            this.label_Name.AutoSize = true;
+            this.label_Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
+            this.label_Name.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label_Name.Location = new System.Drawing.Point(1006, 39);
+            this.label_Name.Name = "label_Name";
+            this.label_Name.Size = new System.Drawing.Size(177, 24);
+            this.label_Name.TabIndex = 5;
+            this.label_Name.Text = "Ngô Lưu Quốc Đạt";
             // 
-            // report_Control1
+            // label_UserType
             // 
-            this.report_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.report_Control1.Location = new System.Drawing.Point(250, 100);
-            this.report_Control1.Name = "report_Control1";
-            this.report_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.report_Control1.TabIndex = 5;
+            this.label_UserType.AutoSize = true;
+            this.label_UserType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
+            this.label_UserType.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_UserType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label_UserType.Location = new System.Drawing.Point(919, 39);
+            this.label_UserType.Name = "label_UserType";
+            this.label_UserType.Size = new System.Drawing.Size(90, 24);
+            this.label_UserType.TabIndex = 5;
+            this.label_UserType.Text = "Quản lý:";
             // 
-            // product_Control1
+            // pic_UpperLogo
             // 
-            this.product_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.product_Control1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(214)))), ((int)(((byte)(247)))));
-            this.product_Control1.Location = new System.Drawing.Point(250, 100);
-            this.product_Control1.Name = "product_Control1";
-            this.product_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.product_Control1.TabIndex = 4;
+            this.pic_UpperLogo.Location = new System.Drawing.Point(42, 36);
+            this.pic_UpperLogo.Name = "pic_UpperLogo";
+            this.pic_UpperLogo.Size = new System.Drawing.Size(50, 50);
+            this.pic_UpperLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_UpperLogo.TabIndex = 3;
+            this.pic_UpperLogo.TabStop = false;
             // 
-            // staff_Control1
+            // label_UpperLogo
             // 
-            this.staff_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.staff_Control1.Location = new System.Drawing.Point(250, 100);
-            this.staff_Control1.Name = "staff_Control1";
-            this.staff_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.staff_Control1.TabIndex = 3;
+            this.label_UpperLogo.AutoSize = true;
+            this.label_UpperLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
+            this.label_UpperLogo.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_UpperLogo.ForeColor = System.Drawing.Color.White;
+            this.label_UpperLogo.Location = new System.Drawing.Point(109, 48);
+            this.label_UpperLogo.Name = "label_UpperLogo";
+            this.label_UpperLogo.Size = new System.Drawing.Size(145, 27);
+            this.label_UpperLogo.TabIndex = 2;
+            this.label_UpperLogo.Text = "                   ";
             // 
-            // welcome_Control1
+            // panel_Main
             // 
-            this.welcome_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.welcome_Control1.Location = new System.Drawing.Point(250, 100);
-            this.welcome_Control1.Name = "welcome_Control1";
-            this.welcome_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.welcome_Control1.TabIndex = 2;
-            // 
-            // account_Control1
-            // 
-            this.account_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(59)))));
-            this.account_Control1.Location = new System.Drawing.Point(250, 100);
-            this.account_Control1.Name = "account_Control1";
-            this.account_Control1.Size = new System.Drawing.Size(1250, 700);
-            this.account_Control1.TabIndex = 8;
+            this.panel_Main.Location = new System.Drawing.Point(250, 100);
+            this.panel_Main.Name = "panel_Main";
+            this.panel_Main.Size = new System.Drawing.Size(1250, 700);
+            this.panel_Main.TabIndex = 3;
             // 
             // Form_Admin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1500, 800);
-            this.Controls.Add(this.account_Control1);
-            this.Controls.Add(this.import_Control1);
-            this.Controls.Add(this.bill_Control1);
-            this.Controls.Add(this.report_Control1);
-            this.Controls.Add(this.product_Control1);
-            this.Controls.Add(this.staff_Control1);
-            this.Controls.Add(this.welcome_Control1);
+            this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.panel_Head);
             this.Controls.Add(this.panel_Left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -381,11 +318,11 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Admin_FormClosed);
             this.panel_Logo.ResumeLayout(false);
             this.panel_Logo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_StoreLogo)).EndInit();
             this.panel_Left.ResumeLayout(false);
             this.panel_Head.ResumeLayout(false);
             this.panel_Head.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_UpperLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_StoreLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -405,16 +342,10 @@
         private System.Windows.Forms.PictureBox pic_UpperLogo;
         private System.Windows.Forms.PictureBox pic_StoreLogo;
         private System.Windows.Forms.Label label_StoreName;
-        private Welcome_Control welcome_Control1;
-        private Staff_Control staff_Control1;
-        private Product_Control product_Control1;
         private System.Windows.Forms.Label label_UserType;
         private System.Windows.Forms.Label label_Name;
-        private Report_Control report_Control1;
         private System.Windows.Forms.Button btn_Import;
         private System.Windows.Forms.Button btn_Bill;
-        private Bill_Control bill_Control1;
-        private View.Import_Control import_Control1;
-        private View.Account_Control account_Control1;
+        private System.Windows.Forms.Panel panel_Main;
     }
 }

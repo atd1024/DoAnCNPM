@@ -19,7 +19,11 @@ namespace QuanLyCuaHangGear.View
         {
             InitializeComponent();
             panel_Slide.Visible = false;
-            welcome_Control1.BringToFront();
+            //welcome_Control1.BringToFront();
+                panel_Main.Controls.Add(Welcome_Control.Instance);
+                Welcome_Control.Instance.Dock = DockStyle.Fill;
+                Welcome_Control.Instance.BringToFront();
+            
         }
         // methods
 
@@ -66,7 +70,15 @@ namespace QuanLyCuaHangGear.View
             Active_Effect((Button)sender);
             btn_Bill.Image = Properties.Resources.blue_bill;
             pic_UpperLogo.Image = Properties.Resources.blue_bill;
-            bill_Control1.BringToFront();
+            // bill_Control1.BringToFront();
+            if (!panel_Main.Controls.Contains(Bill_Control.Instance))
+            {
+                panel_Main.Controls.Add(Bill_Control.Instance);
+                Bill_Control.Instance.Dock = DockStyle.Fill;
+                Bill_Control.Instance.BringToFront();
+            }
+            else
+                Bill_Control.Instance.BringToFront();
         }
 
         private void btn_Import_Click(object sender, EventArgs e)
@@ -74,7 +86,15 @@ namespace QuanLyCuaHangGear.View
             Active_Effect((Button)sender);
             btn_Import.Image = Properties.Resources.blue_import;
             pic_UpperLogo.Image = Properties.Resources.blue_import;
-            import_Control1.BringToFront();
+            // import_Control1.BringToFront();
+            if (!panel_Main.Controls.Contains(Import_Control.Instance))
+            {
+                panel_Main.Controls.Add(Import_Control.Instance);
+                Import_Control.Instance.Dock = DockStyle.Fill;
+                Import_Control.Instance.BringToFront();
+            }
+            else
+                Import_Control.Instance.BringToFront();
         }
 
         private void btn_Account_Click(object sender, EventArgs e)
@@ -82,7 +102,15 @@ namespace QuanLyCuaHangGear.View
             Active_Effect((Button)sender);
             btn_Account.Image = Properties.Resources.blue_user;
             pic_UpperLogo.Image = Properties.Resources.blue_user;
-            account_Control1.BringToFront();
+            // account_Control1.BringToFront();
+            if (!panel_Main.Controls.Contains(Account_Control.Instance))
+            {
+                panel_Main.Controls.Add(Account_Control.Instance);
+                Account_Control.Instance.Dock = DockStyle.Fill;
+                Account_Control.Instance.BringToFront();
+            }
+            else
+                Account_Control.Instance.BringToFront();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -93,6 +121,11 @@ namespace QuanLyCuaHangGear.View
         private void Form_Staff_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.DialogResult = DialogResult.OK;          
+        }
+
+        private void pic_StoreLogo_Click(object sender, EventArgs e)
+        {
+            Welcome_Control.Instance.BringToFront();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace QuanLyCuaHangGear.View
+﻿namespace QuanLyCuaHangGear
 {
     partial class Account_Control
     {
